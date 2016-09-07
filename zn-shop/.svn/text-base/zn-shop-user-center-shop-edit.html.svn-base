@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta content="telephone=no" name="format-detection" />
+		<meta charset="utf-8" />
+		<title>重牛商城</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/zn-shop.min.css"/>
+		
+		<script src="js/jquery-1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		<div class="shop-wrapper">
+			<header>
+				<nav class="navbar navbar-fixed-top">
+					<div class="container">
+						<div class="navbar-header">
+							<a class="navbar-brand" href="http://www.zhongniu56.com">
+								<img src="images/zn-logo.png" alt="zhongniu56.com"/>
+							</a>
+						</div>
+						
+						<div>
+							<ul class="nav navbar-nav">
+								<li><a href="zn-shop-index.html">首页</a></li>
+								<li><a href="zn-shop-service-needs-list.html">需求列表</a></li>
+								<li><a href="zn-shop-service-search-result.html">供应商</a></li>
+							</ul>
+							<form class="navbar-form navbar-left" role="search">
+								<div class="form-group has-feedback">
+									<span class="glyphicon glyphicon-search form-control-feedback"></span>
+									<input type="text" class="form-control" name="" id="" value="" placeholder="搜索"/>
+								</div>
+							</form>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="zn-shop-login.html">登陆</a></li>
+								<li><a href="zn-shop-register.html">注册</a></li>
+								<li><a class="btn btn-orange" href="zn-shop-service-needs-1.html" role="button">发布需求</a></li>
+							</ul>
+						</div>
+						
+					</div>
+				</nav>
+			</header>
+			<div class="content-wrapper zn-content-wrapper">
+				<div class="container">
+					<div class="row zn-shop-head">
+						<div class="col-md-12 col-xs-12">
+							<div class="row">
+								<div class="col-md-6 col-xs-12">
+									<div class="row">
+										<div class="col-sm-3 col-xs-4">
+											<img src="images/qrtest.png" class="icon-head"/>
+										</div>
+										<div class="col-sm-9 col-xs-8">
+											<div class="row shop-name">
+												<p>店铺名称</p>
+											</div>
+											<div class="row shop-phone-number">
+												<p>电话：1388888888</p>
+											</div>
+											<div class="row shop-intro zn-text-hidden">
+												<p>简介：内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字内容文字</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 zn-shop-head-btn-wrapper">
+									<div class="row ">
+										<a href="" class="btn btn-orange zn-shop-head-btn pull-right">我有需求</a>
+										<a href="" class="btn btn-warning zn-shop-head-btn pull-right">我要开店</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row zn-shop-edit-body">
+						<div class="col-sm-12">
+							<div class="row">
+								<div class="col-sm-12 zn-shop-edit-title">商品图片</div>
+								<div class="col-sm-12">
+									<div class="zn-shop-edit-upload zn-upload-mask-btn">
+										<span class="edit-plus">+</span>
+									</div>
+									<input type="file" name="" id="" value="" class="sr-only"/>
+									<div class="edit-plus-help">
+										<p>上传的照片必须清晰无遮挡，大小不超过5M。</p>
+										<p>注意：只可以上传一张图片</p>
+										<p>图片比例为16:9</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12 zn-shop-edit-title">商品标题</div>
+								<div class="col-sm-12">
+									<input type="" name="" id="" value="" class="zn-shop-edit-input" />
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12 zn-shop-edit-title">商品描述</div>
+								<div class="col-sm-12">
+									<textarea name="area1" id="area1" rows="6" cols="61"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="zn-shop-footer-add"></div>
+			<div class="zn-shop-footer">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-6 setup-shop-btn">我要开店</div>
+						<div class="col-xs-6 myneeds-btn">我有需求</div>
+					</div>
+				</div>
+			</div>
+			
+            <footer>
+				<div class="container-fluid">
+					<div class="row footer-1">
+						<div class="row text-center">
+							<a href="">网站首页</a>
+							<span>|</span>
+							<a href="">网站地图</a>
+							<span>|</span>
+							<a href="">联系方式</a>
+							<span>|</span>
+							<a href="">联系我们</a>
+							<span>|</span>
+							<a href="">广告服务</a>
+							<span>|</span>
+							<a href="">网站留言</a>
+							<span>|</span>
+							<a href="">关于我们</a>
+							<span>|</span>
+							<a href="">意见反馈</a>
+						</div>
+						<div class="row firends-links">
+							<div class="col-md-3 text-right">
+								<span>友情链接：</span>
+							</div>
+							<div class="col-md-5">
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+								</div>
+							</div>
+							<div class="col-md-4 text-left footer-qr">
+								<div class="row">
+									<span>关注“重牛会”公众号</span>
+								</div>
+								<div class="row footer-qr-img">
+									<div class="pull-left">
+										<img src="images/qrtest.png" width="60" height="60"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row footer-2 text-center">
+						<p>广州市重牛网络科技有限公司   京ICP备1234567</p>
+						<p>所在地址：广州市白云区江夏北二路3号云商易城B栋209</p>
+						<p>联系电话：4001-118-918   周一至周日：8:00-18:00</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+		
+		<script src="js/distpicker.data.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/distpicker.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/nicEdit.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zn-shop.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

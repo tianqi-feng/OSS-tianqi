@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta content="telephone=no" name="format-detection" />
+		<meta charset="utf-8" />
+		<title>重牛商城</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/zn-shop.min.css"/>
+		
+		<script src="js/jquery-1.9.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		<div class="shop-wrapper">
+		<header>
+				<nav class="navbar navbar-fixed-top">
+					<div class="container">
+						<div class="navbar-header">
+							<a class="navbar-brand" href="http://www.zhongniu56.com">
+								<img src="images/zn-logo.png" alt="zhongniu56.com"/>
+							</a>
+						</div>
+						
+						<div>
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="zn-shop-index.html">首页</a></li>
+								<li><a href="zn-shop-service-needs-list.html">需求列表</a></li>
+								<li><a href="zn-shop-service-search-result.html">供应商</a></li>
+							</ul>
+							<form class="navbar-form navbar-left" role="search">
+								<div class="form-group has-feedback">
+									<span class="glyphicon glyphicon-search form-control-feedback"></span>
+									<input type="text" class="form-control" name="" id="" value="" placeholder="搜索"/>
+								</div>
+							</form>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="zn-shop-login.html">登陆</a></li>
+								<li><a href="zn-shop-register.html">注册</a></li>
+								<li><a class="btn btn-orange" href="zn-shop-service-needs-1.html" role="button">发布需求</a></li>
+							</ul>
+						</div>
+						
+					</div>
+				</nav>
+			</header>
+			<div class="header-wx container-fluid">
+				<div class="row">
+					<nav class="navbar zn-navbar-wx">
+					<div class="container">
+						<div class="navbar-header row">
+							<div class="col-xs-3 nopadding">
+								<a class="navbar-brand" href="http://www.zhongniu56.com">
+									<img src="images/zn-logo.png" alt="zhongniu56.com" id="test"/>
+								</a>
+							</div>
+							<div class="col-xs-7">
+								<form class="navbar-form navbar-left zn-navbar-form-wx" role="search">
+									<div class="form-group has-feedback">
+										<span class="glyphicon glyphicon-search form-control-feedback"></span>
+										<input type="text" class="form-control" name="" id="" value="" placeholder="搜索"/>
+									</div>
+								</form>
+							</div>
+							<div class="col-xs-2">
+								<div class="row head-icon">
+    								<img src="images/qrtest.png" class="img-responsive img-circle"/>
+								</div>
+
+							</div>
+							
+						</div>
+						
+					</div>
+				</nav>
+				</div>
+			</div>
+			<div class="content-wrapper">
+				<div class="container-fluid">
+					
+					<!--轮播-->
+					<div class="row">
+						<div class="carousel slide zn-carousel">
+							<ol class="carousel-indicators">
+								<li data-target=".zn-carousel" data-slide-to="0" class="active"></li>
+								<li data-target=".zn-carousel" data-slide-to="1"></li>
+								<li data-target=".zn-carousel" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="images/download.png"/>
+								</div>
+								<div class="item">
+									<img src="images/download.png"/>
+								</div>
+								<div class="item">
+									<img src="images/download.png"/>
+								</div>
+							</div>
+							<div class="container">
+								<div class="row asking-info">
+									<form class="form-horizontal">
+										<div class="form-group title">
+											<div class="col-md-12">
+											    <h5>免费咨询<small>0元现场勘测，获取报价方案</small></h5>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="" class="sr-only control-label"></label>
+											<div class="col-md-12">
+												<input class="form-control" type="" name="" id="" value="" placeholder="您的称呼"/>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="" class="sr-only control-label"></label>
+											<div class="col-md-12">
+												<input class="form-control" type="" name="" id="" value="" placeholder="您的联系电话"/>
+											</div>
+										</div>
+										<div class="form-group" data-toggle="distpicker">
+											<div class="col-md-6">
+												<select name="" class="form-control" data-province="省/市"></select>
+											</div>
+											<div class="col-md-6">
+												<select name="" class="form-control" data-city="市/区"></select>
+											</div>
+											<div class="col-md-6">
+												<select name="" class="form-control sr-only" data-district = "市/区"></select>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="" class="sr-only control-label"></label>
+											<div class="col-md-12">
+												<input class="form-control" type="" name="" id="" value="" placeholder="项目类别"/>
+											</div>
+										</div>
+										<div class="form-group apply-now">
+											<div class="col-md-12">
+												<button class="btn btn-orange form-control">立即申请</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							
+							<div class="container">
+								<div class="row">
+									<a class="carousel-control" href=".zn-carousel" role="button" data-slide="prev">
+									    <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+									    <span class="sr-only">上一张</span>
+									</a>
+									<a class="right carousel-control" href=".zn-carousel" role="button" data-slide="next">
+									    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+									    <span class="sr-only">下一张</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="container zn-index-wrapper">
+							<div class="row">
+								<ol class="list-inline zn-opration-process">
+									<li>操作流程</li>
+									<li>需求发布</li>
+									<li>供应商接单</li>
+									<li>项目作业</li>
+									<li>审核评价</li>
+								</ol>
+							</div>
+							<div class="row zn-index-content-wrapper">
+								
+								<!--链接模块-->
+								<div class="row zn-content-box">
+									<div class="col-md-4 zn-content-box-span">
+										<div class="row title">
+											<div class="col-sm-8">平台需求</div>
+											<div class="col-sm-4 text-right">
+												<a href="">&gt;&gt;</a>
+											</div>
+										</div>
+										<div class="row content">
+											<div class="col-sm-12 nopadding">
+												<div class="row content-links">
+													<a href="">
+														<div class="col-sm-8">运飞机</div>
+														<div class="col-sm-4 text-right">
+															<span>招标中</span>
+															<span>深圳</span>
+														</div>
+													</a>
+												</div>
+												<div class="row content-links">
+													<a href="">
+														<div class="col-sm-8">运飞机一汽大众下半年销售计划一汽大众下半年销售计划一汽大众下半年销售计划一汽大众下半年销售计划一汽大众下半年销售计划</div>
+														<div class="col-sm-4 text-right">
+															<span>招标中</span>
+															<span>深圳</span>
+														</div>
+													</a>
+												</div>
+												<div class="row content-links">
+													<a href="">
+														<div class="col-sm-8">运飞机</div>
+														<div class="col-sm-4 text-right">
+															<span>招标中</span>
+															<span>深圳</span>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 zn-content-box-span">
+										<div class="row title">
+											<div class="col-sm-8">招投标信息</div>
+											<div class="col-sm-4 text-right">
+												<a href="">&gt;&gt;</a>
+											</div>
+										</div>
+										<div class="row content">
+											<div class="col-sm-12 nopadding">
+												<div class="row content-links">
+													<a href="">
+														<div class="col-sm-8">一汽大众下半年销售计划</div>
+														<div class="col-sm-4 text-right">
+															7-26
+														</div>
+													</a>
+												</div>
+												<div class="row content-links">
+													<a href="">
+														<div class="col-sm-8">一汽大众下半年销售计划一汽大众下半年销售计划一汽大众下半年销售计划一汽大众下半年销售计划一汽大众下半年销售计划一汽大众下半年销售计划</div>
+														<div class="col-sm-4 text-right">
+															7-26
+														</div>
+													</a>
+												</div>
+												<div class="row content-links">
+													<a href="">
+														<div class="col-sm-8">一汽大众下半年销售计划</div>
+														<div class="col-sm-4 text-right">
+															7-26
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 zn-content-box-span">
+										<div class="row title">
+											<div class="col-sm-8">企业服务商排行</div>
+											<div class="col-sm-4 text-right">
+												<a href="">&gt;&gt;</a>
+											</div>
+										</div>
+										<div class="row content">
+											<div class="col-sm-12 nopadding">
+												<div class="row content-links">
+													<a href="">
+														<div class="col-sm-8">广东省广州桥梁机械装备厂</div>
+														<div class="col-sm-4 text-right">
+															广州 
+														</div>
+													</a>
+												</div>
+												<div class="row content-links">
+													<a href="">
+														<div class="col-sm-8">广东省广州桥梁机械装备厂广东省广州桥梁机械装备厂广东省广州桥梁机械装备厂广东省广州桥梁机械装备厂广东省广州桥梁机械装备厂</div>
+														<div class="col-sm-4 text-right">
+															广州 
+														</div>
+													</a>
+												</div>
+												<div class="row content-links">
+													<a href="">
+														<div class="col-sm-8">广东省广州桥梁机械装备厂</div>
+														<div class="col-sm-4 text-right">
+															广州 
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									
+								</div>
+								<!--/.链接模块-->
+								
+								<!--新闻版块-->
+								<div class="row zn-content-box zn-content-box-news">
+									<div class="col-md-8 zn-content-box-span">
+										<div class="row title">
+											<div class="col-sm-8">最新资讯</div>
+											<div class="col-sm-4 text-right">
+												<a href="">&gt;&gt;</a>
+											</div>
+										</div>
+										<div class="row content">
+											<div class="col-sm-6">
+												<a href="" class="img-thumbnail">
+													<img src="images/news.png"/>
+													<div class="caption">
+														<p class="news-title">新闻标题新闻标题新闻标题新闻标题新闻标新闻标题新闻标题新闻标题新闻标题新闻标新闻标题新闻标题新闻标题新闻标题新闻标新闻标题新闻标题新闻标题新闻标题新闻标</p>
+													</div>
+												</a>
+											</div>
+											<div class="col-sm-6 nopadding">
+												<div class="row content-links">
+													<a href="">
+														<div class="col-sm-8">标题文字标题文字标题文字标题文字</div>
+														<div class="col-sm-4 text-right">
+															7-26
+														</div>
+													</a>
+												</div>
+												<div class="row content-links">
+													<a href="">
+														<div class="col-sm-8">运飞机一汽大众下半年销售计划一汽大众下半年销售计划一汽大众下半年销售计划一汽大众下半年销售计划一汽大众下半年销售计划</div>
+														<div class="col-sm-4 text-right">
+															7-26
+														</div>
+													</a>
+												</div>
+												<div class="row content-links">
+													<a href="">
+														<div class="col-sm-8">标题文字标题文字标题文字标题文字</div>
+														<div class="col-sm-4 text-right">
+															7-26
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 zn-content-box-span">
+										<div class="row title">
+											<div class="col-sm-8">常见问题</div>
+											<div class="col-sm-4 text-right">
+												<a href="">&gt;&gt;</a>
+											</div>
+										</div>
+										<div class="row content">
+											<div class="col-sm-12 nopadding">
+												<div class="row content-links">
+													<a href="">
+														<div class="col-sm-8">1.一二三四五六七八九十</div>
+														<div class="col-sm-4 text-right">
+														</div>
+													</a>
+												</div>
+												<div class="row content-links">
+													<a href="">
+														<div class="col-sm-8">2.运飞机一汽大众下半年销售计划一汽大众下半年销售计划一汽大众下半年销售计划一汽大众下半年销售计划一汽大众下半年销售计划</div>
+														<div class="col-sm-4 text-right">
+														</div>
+													</a>
+												</div>
+												<div class="row content-links">
+													<a href="">
+														<div class="col-sm-8">3.一二三四五六七八九十</div>
+														<div class="col-sm-4 text-right">
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<!--展示模块-->
+								<div class="row zn-content-box zn-content-box-news zn-content-box-show">
+									<div class="col-md-12 zn-content-box-span">
+										<div class="row title">
+											<div class="col-sm-3 col-md-1 box-show-all-btn">全部</div>
+											<div class="col-sm-3 col-md-1 advanced-tools-btn">先进工具</div>
+											<div class="col-sm-3 col-md-1 case-hall-btn">案例大厅</div>
+											<div class="col-sm-3 col-md-9 text-right">
+												<a href="">&gt;&gt;</a>
+											</div>
+										</div>
+										<div class="row content">
+											<div class="col-sm-4 advanced-tools">
+												<a href="" class="img-thumbnail">
+													<div class="box-show-class">先进工具</div>
+													<img src="images/news.png"/>
+													<div class="caption">
+														<p class="news-title">新闻标题新闻标题新闻标题新闻标题新闻标新闻标题新闻标题新闻标题新闻标题新闻标新闻标题新闻标题新闻标题新闻标题新闻标新闻标题新闻标题新闻标题新闻标题新闻标</p>
+														<p class="news-time">6-25</p>
+														<p class="news-intro">描述文字描述文字描述文字描述文字描述文字描述描述文字描述文字描述文字描述文字描述文字描述</p>
+													</div>
+												</a>
+											</div>
+											<div class="col-sm-4 advanced-tools">
+												<a href="" class="img-thumbnail">
+													<div class="box-show-class">先进工具</div>
+													<img src="images/news.png"/>
+													<div class="caption">
+														<p class="news-title">新闻标题新闻标题新闻标题新闻标题新闻标新闻标题新闻标题新闻标题新闻标题新闻标新闻标题新闻标题新闻标题新闻标题新闻标新闻标题新闻标题新闻标题新闻标题新闻标</p>
+														<p class="news-time">6-25</p>
+														<p class="news-intro">描述文字描述文字描述文字描述文字描述文字描述描述文字描述文字描述文字描述文字描述文字描述</p>
+													</div>
+												</a>
+											</div>
+											<div class="col-sm-4 advanced-tools">
+												<a href="" class="img-thumbnail">
+													<div class="box-show-class">先进工具</div>
+													<img src="images/news.png"/>
+													<div class="caption">
+														<p class="news-title">新闻标题新闻标题新闻标题新闻标题新闻标新闻标题新闻标题新闻标题新闻标题新闻标新闻标题新闻标题新闻标题新闻标题新闻标新闻标题新闻标题新闻标题新闻标题新闻标</p>
+														<p class="news-time">6-25</p>
+														<p class="news-intro">描述文字描述文字描述文字描述文字描述文字描述描述文字描述文字描述文字描述文字描述文字描述</p>
+													</div>
+												</a>
+											</div>
+											
+											
+											<div class="col-sm-4 case-hall">
+												<a href="" class="img-thumbnail">
+													<div class="box-show-class">案例大厅</div>
+													<img src="images/news.png"/>
+													<div class="caption">
+														<p class="news-title">新闻标题新闻标题新闻标题新闻标题新闻标新闻标题新闻标题新闻标题新闻标题新闻标新闻标题新闻标题新闻标题新闻标题新闻标新闻标题新闻标题新闻标题新闻标题新闻标</p>
+														<p class="news-time">6-25</p>
+														<p class="news-intro">描述文字描述文字描述文字描述文字描述文字描述描述文字描述文字描述文字描述文字描述文字描述</p>
+													</div>
+												</a>
+											</div>
+											<div class="col-sm-4 case-hall">
+												<a href="" class="img-thumbnail">
+													<div class="box-show-class">案例大厅</div>
+													<img src="images/news.png"/>
+													<div class="caption">
+														<p class="news-title">新闻标题新闻标题新闻标题新闻标题新闻标新闻标题新闻标题新闻标题新闻标题新闻标新闻标题新闻标题新闻标题新闻标题新闻标新闻标题新闻标题新闻标题新闻标题新闻标</p>
+														<p class="news-time">6-25</p>
+														<p class="news-intro">描述文字描述文字描述文字描述文字描述文字描述描述文字描述文字描述文字描述文字描述文字描述</p>
+													</div>
+												</a>
+											</div>
+											<div class="col-sm-4 case-hall">
+												<a href="" class="img-thumbnail">
+													<div class="box-show-class">案例大厅</div>
+													<img src="images/news.png"/>
+													<div class="caption">
+														<p class="news-title">新闻标题新闻标题新闻标题新闻标题新闻标新闻标题新闻标题新闻标题新闻标题新闻标新闻标题新闻标题新闻标题新闻标题新闻标新闻标题新闻标题新闻标题新闻标题新闻标</p>
+														<p class="news-time">6-25</p>
+														<p class="news-intro">描述文字描述文字描述文字描述文字描述文字描述描述文字描述文字描述文字描述文字描述文字描述</p>
+													</div>
+												</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								
+								<!--展会专题-->
+								<div class="row zn-content-box zn-content-box-news zn-content-box-show">
+									<div class="col-md-12 zn-content-box-span">
+										<div class="row title">
+											<div class="col-sm-12 col-md-12">展会专题</div>
+										</div>
+										<div class="row content expo-box">
+											<div class="zn-col-2 col-md-2">
+												<img src="images/news.png"/>
+												<p class="expo-name">某某地方博览会</p>
+												<p class="expo-hr"></p>
+												<p class="expo-addr">会展中心地址xxx号</p>
+												<p class="expo-remark">xxxx.x.xx.xx</p>
+											</div>
+											<div class="zn-col-2 col-md-2">
+												<img src="images/news.png"/>
+												<p class="expo-name">某某地方博览会</p>
+												<p class="expo-hr"></p>
+												<p class="expo-addr">会展中心地址xxx号</p>
+												<p class="expo-remark">xxxx.x.xx.xx</p>
+											</div>
+											<div class="zn-col-2 col-md-2">
+												<img src="images/news.png"/>
+												<p class="expo-name">某某地方博览会</p>
+												<p class="expo-hr"></p>
+												<p class="expo-addr">会展中心地址xxx号</p>
+												<p class="expo-remark">xxxx.x.xx.xx</p>
+											</div>
+											<div class="zn-col-2 col-md-2">
+												<img src="images/news.png"/>
+												<p class="expo-name">某某地方博览会</p>
+												<p class="expo-hr"></p>
+												<p class="expo-addr">会展中心地址xxx号</p>
+												<p class="expo-remark">xxxx.x.xx.xx</p>
+											</div>
+											<div class="zn-col-2 col-md-2">
+												<img src="images/news.png"/>
+												<p class="expo-name">某某地方博览会</p>
+												<p class="expo-hr"></p>
+												<p class="expo-addr">会展中心地址xxx号</p>
+												<p class="expo-remark">xxxx.x.xx.xx</p>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<!--/.展会专题-->
+								
+							</div>
+						</div>
+					</div>
+					
+					<div class="row zn-index-wrapper-wx">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="row">
+										<div class="col-xs-4 icon-demand">
+											<p>找需求</p>
+										</div>
+										<div class="col-xs-4 icon-service-provider">
+											<p>找服务商</p>
+										</div>
+										<div class="col-xs-4 icon-hair-nees">
+											<p>发需求</p>
+										</div>
+									</div>
+									<div class="row zn-hr"></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12">
+									<!--微信内容模块-->
+									<div class="row zn-modules-wx">
+										<div class="col-xs-12">
+											<div class="row zn-modules-wx-title">
+												<div class="col-xs-8">
+													<span class="module-title">需求大厅</span>
+												</div>
+												<div class="col-xs-4 text-right">
+													<a href="" class="wx-links-more">更多</a>
+												</div>
+											</div>
+											<div class="row zn-modules-wx-content">
+												<a href="">
+													<div class="col-xs-8 zn-wx-needs-title">
+														<p>需求标题需求标题需求标题...需求标题需求标题需求标题...需求标题需求标题需求标题...需求标题需求标题需求标题...</p>
+														<p>深圳</p>
+													</div>
+													<div class="col-xs-4 text-right">
+														<p class="zn-wx-needs-status">招标中</p>
+													</div>
+												</a>
+												<a href="">
+													<div class="col-xs-8 zn-wx-needs-title">
+														<p>需求标题需求标题需求标题...</p>
+														<p>深圳</p>
+													</div>
+													<div class="col-xs-4 text-right">
+														<p class="zn-wx-needs-status">招标中</p>
+													</div>
+												</a>
+												<a href="">
+													<div class="col-xs-8 zn-wx-needs-title">
+														<p>需求标题需求标题需求标题...</p>
+														<p>深圳</p>
+													</div>
+													<div class="col-xs-4 text-right">
+														<p class="zn-wx-needs-status">招标中</p>
+													</div>
+												</a>
+												
+											</div>
+										</div>
+									</div>
+									<div class="row zn-hr"></div>
+									<!--/.微信内容模块-->
+									
+									
+									<!--内容模块拷贝-->
+									<!--招标信息-->
+									<div class="row zn-modules-wx">
+										<div class="col-xs-12">
+											<div class="row zn-modules-wx-title">
+												<div class="col-xs-8">
+													<span class="module-title">招标信息</span>
+												</div>
+												<div class="col-xs-4 text-right">
+													<a href="" class="wx-links-more">更多</a>
+												</div>
+											</div>
+											<div class="row zn-modules-wx-content">
+												<a href="">
+													<div class="col-xs-8 zn-wx-needs-title">
+														<p>需求标题需求标题需求标题...需求标题需求标题需求标题...需求标题需求标题需求标题...需求标题需求标题需求标题...</p>
+														<p>内容</p>
+													</div>
+													<div class="col-xs-4 text-right">
+														<p class="zn-wx-bidding-time">8.26</p>
+													</div>
+												</a>
+												<a href="">
+													<div class="col-xs-8 zn-wx-needs-title">
+														<p>需求标题需求标题需求标题...</p>
+														<p>内容</p>
+													</div>
+													<div class="col-xs-4 text-right">
+														<p class="zn-wx-bidding-time">8.26</p>
+													</div>
+												</a>
+												<a href="">
+													<div class="col-xs-8 zn-wx-needs-title">
+														<p>需求标题需求标题需求标题...</p>
+														<p>内容</p>
+													</div>
+													<div class="col-xs-4 text-right">
+														<p class="zn-wx-bidding-time">8.26</p>
+													</div>
+												</a>
+												
+											</div>
+										</div>
+									</div>
+									<div class="row zn-hr"></div>
+									<!--/.招标信息-->
+									
+									<!--服务商列表-->
+									<div class="row zn-modules-wx">
+										<div class="col-xs-12">
+											<div class="row zn-modules-wx-title">
+												<div class="col-xs-8">
+													<span class="module-title">服务商列表</span>
+												</div>
+												<div class="col-xs-4 text-right">
+													<a href="" class="wx-links-more">更多</a>
+												</div>
+											</div>
+											<div class="row zn-modules-wx-content">
+												<a href="">
+													<div class="col-xs-8 zn-wx-needs-title">
+														<p>需求标题需求标题需求标题...需求标题需求标题需求标题...需求标题需求标题需求标题...需求标题需求标题需求标题...</p>
+														<p>深圳</p>
+													</div>
+													<div class="col-xs-4 text-right">
+														<p class="zn-wx-services-addr">深圳</p>
+													</div>
+												</a>
+												<a href="">
+													<div class="col-xs-8 zn-wx-needs-title">
+														<p>需求标题需求标题需求标题...</p>
+														<p>深圳</p>
+													</div>
+													<div class="col-xs-4 text-right">
+														<p class="zn-wx-services-addr">深圳</p>
+													</div>
+												</a>
+												<a href="">
+													<div class="col-xs-8 zn-wx-needs-title">
+														<p>需求标题需求标题需求标题...</p>
+														<p>深圳</p>
+													</div>
+													<div class="col-xs-4 text-right">
+														<p class="zn-wx-services-addr">深圳</p>
+													</div>
+												</a>
+												
+											</div>
+										</div>
+									</div>
+									<div class="row zn-hr"></div>
+									<!--/.服务商列表-->
+									
+									
+									<!--新闻资讯-->
+									<div class="row zn-modules-wx">
+										<div class="col-xs-12">
+											<div class="row zn-modules-wx-title">
+												<div class="col-xs-8">
+													<span class="module-title">新闻资讯</span>
+												</div>
+												<div class="col-xs-4 text-right">
+													<a href="" class="wx-links-more">更多</a>
+												</div>
+											</div>
+											<div class="row zn-modules-wx-content">
+												<!--新闻模块-->
+												<div class="media">
+													<div class="media-left col-xs-4 zn-media-left">
+														<img src="images/news.png"/>
+													</div>
+													<div class="media-body col-xs-8 zn-media-body">
+														<div class="zn-wx-news-title">
+															中国公路运输周指数报告
+														</div>
+														<div class="zn-wx-news-time">
+															2016年5月2日
+														</div>
+														<div class="zn-wx-news-content">
+															由中国物流与采购联合会和林安物流集团联合调查的中国指数...
+														</div>
+													</div>
+												</div>
+												<!--新闻模块-->
+												
+												<!--新闻模块拷贝-->
+												<div class="media">
+													<div class="media-left col-xs-4 zn-media-left">
+														<img src="images/news.png"/>
+													</div>
+													<div class="media-body col-xs-8 zn-media-body">
+														<div class="zn-wx-news-title">
+															中国公路运输周指数报告
+														</div>
+														<div class="zn-wx-news-time">
+															2016年5月2日
+														</div>
+														<div class="zn-wx-news-content">
+															由中国物流与采购联合会和林安物流集团联合调查的中国指数...
+														</div>
+													</div>
+												</div>
+												<div class="media">
+													<div class="media-left col-xs-4 zn-media-left">
+														<img src="images/news.png"/>
+													</div>
+													<div class="media-body col-xs-8 zn-media-body">
+														<div class="zn-wx-news-title">
+															中国公路运输周指数报告
+														</div>
+														<div class="zn-wx-news-time">
+															2016年5月2日
+														</div>
+														<div class="zn-wx-news-content">
+															由中国物流与采购联合会和林安物流集团联合调查的中国指数...
+														</div>
+													</div>
+												</div>
+												<!--/.新闻模块拷贝-->
+												
+												
+											</div>
+										</div>
+									</div>
+									<div class="row zn-hr"></div>
+									
+									<!--/.新闻资讯-->
+									
+									
+									
+									<!--/.内容模块拷贝-->
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				    
+				</div>
+			</div>
+<footer>
+				<div class="container-fluid">
+					<div class="row footer-1">
+						<div class="row text-center">
+							<a href="">网站首页</a>
+							<span>|</span>
+							<a href="">网站地图</a>
+							<span>|</span>
+							<a href="">联系方式</a>
+							<span>|</span>
+							<a href="">联系我们</a>
+							<span>|</span>
+							<a href="">广告服务</a>
+							<span>|</span>
+							<a href="">网站留言</a>
+							<span>|</span>
+							<a href="">关于我们</a>
+							<span>|</span>
+							<a href="">意见反馈</a>
+						</div>
+						<div class="row firends-links">
+							<div class="col-md-3 text-right">
+								<span>友情链接：</span>
+							</div>
+							<div class="col-md-5">
+								<div class="row">
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+									<div class="col-lg-3 col-md-4 col-sm-4"><a href="">中国XX网</a></div>
+								</div>
+							</div>
+							<div class="col-md-4 text-left footer-qr">
+								<div class="row">
+									<span>关注“重牛会”公众号</span>
+								</div>
+								<div class="row footer-qr-img">
+									<div class="pull-left">
+										<img src="images/qrtest.png" width="60" height="60"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row footer-2 text-center">
+						<p>广州市重牛网络科技有限公司   京ICP备1234567</p>
+						<p>所在地址：广州市白云区江夏北二路3号云商易城B栋209</p>
+						<p>联系电话：4001-118-918   周一至周日：8:00-18:00</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+		
+		<script src="js/distpicker.data.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/distpicker.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zn-shop.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
